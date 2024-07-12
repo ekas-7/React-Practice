@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.yo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yo p {
+  margin: 0 1rem;
+  font-size: 2rem; /* Increase the font size */
+}
+
+.yo button {
+  font-size: 2rem; /* Increase the button font size */
+  padding: 1rem; /* Increase the button size */
+}
