@@ -1,6 +1,5 @@
 import image from "./assets/hello.png";
 
-
 export default function App() {
   return (
     <div
@@ -12,12 +11,19 @@ export default function App() {
       }}
     >
       <div className="bg-white bg-opacity-80 mt-4 w-80 h-80 rounded-md flex flex-col justify-between items-center p-4">
-        {/* Profile Image */}
-        <div className="w-24 h-24 rounded-full overflow-hidden bg-gray-200">
+        {/* Profile Image with Background */}
+        <div
+          className="w-24 h-24 rounded-full overflow-hidden bg-gray-200"
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <img
             src={image}
             alt="profile"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-0"
           />
         </div>
 
