@@ -1,7 +1,11 @@
 import image from "./assets/hello.png";
+import Colorchanger from "./components/Colorchanger";
+import ParagraphGenerator from "./components/ParagraphGenerator";
+import OTP from "./components/OTP";
 
 export default function App() {
   return (
+    <>
     <div
       className="bg-teal-800 h-screen flex justify-center items-center"
       style={{
@@ -46,6 +50,11 @@ export default function App() {
           </div>
         </div>
       </div>
+      
     </div>
+    <Colorchanger />
+    <ParagraphGenerator />
+    <OTP />
+    </>
   );
 }
